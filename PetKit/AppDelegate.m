@@ -19,12 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"hrs_dfu_s110_8_0_sdk_8_0" withExtension:@"zip"];
+    DFUFirmware *firmware = [[DFUFirmware alloc] initWithUrlToZipFile:fileURL];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"hrs_dfu_s110_8_0_sdk_8_0" ofType:@"zip"];
-    NSURL *URL = [NSURL URLWithString:path];
-    DFUFirmware *firmware = [[DFUFirmware alloc] initWithUrlToZipFile:URL];
-    
-    NSLog(@"path = %@\n\nURL = %@\n\nfirmware = %@", path, URL, firmware);
+    NSLog(@"URL = %@\n\nfirmware = %@", fileURL, firmware);
     
     return YES;
 }
