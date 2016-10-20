@@ -13,7 +13,6 @@
 		1BA3D4991DB7671B00663196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D4971DB7671B00663196 /* Main.storyboard */; };
 		1BA3D49B1DB7671B00663196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49A1DB7671B00663196 /* Assets.xcassets */; };
 		1BA3D49E1DB7671B00663196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49C1DB7671B00663196 /* LaunchScreen.storyboard */; };
-		1BA3D4AE1DB7690900663196 /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA3D4AD1DB7690900663196 /* iOSDFULibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1BA3D4B01DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		1BA3D49A1DB7671B00663196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA3D49D1DB7671B00663196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA3D49F1DB7671B00663196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BA3D4AD1DB7690900663196 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSDFULibrary.framework; sourceTree = "<group>"; };
 		1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = hrs_dfu_s110_8_0_sdk_8_0.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA3D4AE1DB7690900663196 /* iOSDFULibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */,
-				1BA3D4AD1DB7690900663196 /* iOSDFULibrary.framework */,
 				1BA3D4911DB7671B00663196 /* AppDelegate.h */,
 				1BA3D4921DB7671B00663196 /* AppDelegate.m */,
 				1BA3D4941DB7671B00663196 /* ViewController.h */,
@@ -342,6 +338,7 @@
 				1BA3D4A41DB7671B00663196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
