@@ -14,8 +14,10 @@
 		1BA3D49B1DB7671B00663196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49A1DB7671B00663196 /* Assets.xcassets */; };
 		1BA3D49E1DB7671B00663196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49C1DB7671B00663196 /* LaunchScreen.storyboard */; };
 		1BA3D4B01DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */; };
-		30B4A0281DB912310019B814 /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0261DB912310019B814 /* iOSDFULibrary.framework */; };
-		30B4A0291DB912310019B814 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0271DB912310019B814 /* Zip.framework */; };
+		30B4A02A1DB912AA0019B814 /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0261DB912310019B814 /* iOSDFULibrary.framework */; };
+		30B4A02B1DB912AA0019B814 /* iOSDFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0261DB912310019B814 /* iOSDFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30B4A02C1DB912AA0019B814 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0271DB912310019B814 /* Zip.framework */; };
+		30B4A02D1DB912AA0019B814 /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0271DB912310019B814 /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				30B4A02D1DB912AA0019B814 /* Zip.framework in Embed Frameworks */,
+				30B4A02B1DB912AA0019B814 /* iOSDFULibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B4A0291DB912310019B814 /* Zip.framework in Frameworks */,
-				30B4A0281DB912310019B814 /* iOSDFULibrary.framework in Frameworks */,
+				30B4A02C1DB912AA0019B814 /* Zip.framework in Frameworks */,
+				30B4A02A1DB912AA0019B814 /* iOSDFULibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +139,7 @@
 				TargetAttributes = {
 					1BA3D48A1DB7671B00663196 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SP6XT46BZ8;
+						DevelopmentTeam = P3R8YQEV4L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -296,8 +300,9 @@
 		1BA3D4A31DB7671B00663196 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP6XT46BZ8;
+				DEVELOPMENT_TEAM = P3R8YQEV4L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
@@ -314,8 +319,9 @@
 		1BA3D4A41DB7671B00663196 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP6XT46BZ8;
+				DEVELOPMENT_TEAM = P3R8YQEV4L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
