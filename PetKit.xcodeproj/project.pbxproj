@@ -14,6 +14,8 @@
 		1BA3D49B1DB7671B00663196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49A1DB7671B00663196 /* Assets.xcassets */; };
 		1BA3D49E1DB7671B00663196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D49C1DB7671B00663196 /* LaunchScreen.storyboard */; };
 		1BA3D4B01DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */; };
+		30B4A0281DB912310019B814 /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0261DB912310019B814 /* iOSDFULibrary.framework */; };
+		30B4A0291DB912310019B814 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B4A0271DB912310019B814 /* Zip.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 		1BA3D49D1DB7671B00663196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA3D49F1DB7671B00663196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA3D4AF1DB7695300663196 /* hrs_dfu_s110_8_0_sdk_8_0.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = hrs_dfu_s110_8_0_sdk_8_0.zip; sourceTree = "<group>"; };
+		30B4A0261DB912310019B814 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSDFULibrary.framework; sourceTree = "<group>"; };
+		30B4A0271DB912310019B814 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Zip.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B4A0291DB912310019B814 /* Zip.framework in Frameworks */,
+				30B4A0281DB912310019B814 /* iOSDFULibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 		1BA3D4821DB7671B00663196 = {
 			isa = PBXGroup;
 			children = (
+				30B4A0261DB912310019B814 /* iOSDFULibrary.framework */,
+				30B4A0271DB912310019B814 /* Zip.framework */,
 				1BA3D48D1DB7671B00663196 /* PetKit */,
 				1BA3D48C1DB7671B00663196 /* Products */,
 			);
@@ -293,6 +301,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -310,6 +319,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
