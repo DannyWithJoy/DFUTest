@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B941E701DC05C74005B5E69 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B941E6F1DC05C74005B5E69 /* CoreBluetooth.framework */; };
 		1BA3D4901DB7671B00663196 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3D48F1DB7671B00663196 /* main.m */; };
 		1BA3D4931DB7671B00663196 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3D4921DB7671B00663196 /* AppDelegate.m */; };
 		1BA3D4961DB7671B00663196 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3D4951DB7671B00663196 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B941E6F1DC05C74005B5E69 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1BA3D48B1DB7671B00663196 /* PetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA3D48F1DB7671B00663196 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BA3D4911DB7671B00663196 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B941E701DC05C74005B5E69 /* CoreBluetooth.framework in Frameworks */,
 				30B4A02C1DB912AA0019B814 /* Zip.framework in Frameworks */,
 				30B4A02A1DB912AA0019B814 /* iOSDFULibrary.framework in Frameworks */,
 			);
@@ -64,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B941E6E1DC05C74005B5E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B941E6F1DC05C74005B5E69 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1BA3D4821DB7671B00663196 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +82,7 @@
 				30B4A0271DB912310019B814 /* Zip.framework */,
 				1BA3D48D1DB7671B00663196 /* PetKit */,
 				1BA3D48C1DB7671B00663196 /* Products */,
+				1B941E6E1DC05C74005B5E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +151,7 @@
 				TargetAttributes = {
 					1BA3D48A1DB7671B00663196 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P3R8YQEV4L;
+						DevelopmentTeam = SP6XT46BZ8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -302,7 +314,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P3R8YQEV4L;
+				DEVELOPMENT_TEAM = SP6XT46BZ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
@@ -321,7 +333,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P3R8YQEV4L;
+				DEVELOPMENT_TEAM = SP6XT46BZ8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PetKit",
